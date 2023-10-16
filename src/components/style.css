@@ -1,0 +1,45 @@
+.header-content {
+  text-align: center;
+}
+
+.album-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 25px 50px;
+  z-index: 1;
+
+}
+
+.cover-wrapper img {
+  position: relative;
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+
+}
+
+.album {
+  position: relative;
+  margin: 10px;
+}
+
+.album-name {
+  font-weight: bold;
+}
+
+.artist-name span, a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+
+.album-name a {
+  color: white;
+  text-decoration: none;
+}
+
+.album-name a:hover,
+.artist-name span, a:hover {
+  text-decoration: underline;
+}
