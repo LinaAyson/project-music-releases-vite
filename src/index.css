@@ -7,10 +7,32 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: #070707;
   color: #fefefe;
+  margin: 25px 50px;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.album-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+}
+
+.album {
+  margin: 10px;
+}
+
+@media (min-width: 667px) {
+  .album-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

@@ -3,34 +3,38 @@ import style from "./style.css";
 import AlbumName from "./AlbumName";
 import ArtistName from "./ArtistName";
 import CoverImage from "./CoverImage";
+import Heart from "./HeartIcon";
+import Play from "./PlayIcon";
+import Dots from "./DotIcon";
 import HeartIcon from "./HeartIcon";
-import DotIcon from "./DotIcon";
-import PlayIcon from "./PlayIcon";
 
 export default function Album({ albumData }) {
   return (
     <div className="album">
       <div className="cover-wrapper">
         <CoverImage imageUrl={albumData.images[0].url} />
+        <span className="icons-wrapper">
+          <button className="icon">
+            <Heart />
+          </button>
+          <button className="icon-play">
+            <Play />
+          </button>
+          <button className="icon">
+            <Dots />
+          </button>
+        </span>
       </div>
-      {/* <div className="icons"></div> */}
+
       <div className="album-info">
-        {/* <PlayIcon />
-        <DotIcon />
-        <HeartIcon /> */}
-        <a
-          href={albumData.external_urls.spotify}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AlbumName
-            name={albumData.name}
-            externalUrl={albumData.external_urls.spotify}
-          />
-        </a>
+        <AlbumName
+          name={albumData.name}
+          externalUrl={albumData.external_urls.spotify}
+        />
+      </div>
+      <div className="artist-name">
         <ArtistName artists={albumData.artists} />
       </div>
-      <div className="artist-name"></div>
     </div>
   );
 }
