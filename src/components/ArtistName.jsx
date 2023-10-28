@@ -1,5 +1,4 @@
 import React from "react";
-import "./ArtistName.css"; // Import your CSS file
 
 export default function ArtistName({ artists }) {
   return (
