@@ -6,7 +6,6 @@ import CoverImage from "./CoverImage";
 import Heart from "./HeartIcon";
 import Play from "./PlayIcon";
 import Dots from "./DotIcon";
-import HeartIcon from "./HeartIcon";
 
 export default function Album({ albumData }) {
   return (
@@ -31,9 +30,10 @@ export default function Album({ albumData }) {
           name={albumData.name}
           externalUrl={albumData.external_urls.spotify}
         />
-      </div>
-      <div className="artist-name">
-        <ArtistName artists={albumData.artists} />
+
+        <div className="artist-name">
+          <ArtistName artists={albumData.artists} />
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import "./ArtistName.css"; // Import your CSS file
 
 export default function ArtistName({ artists }) {
   return (
@@ -12,13 +13,6 @@ export default function ArtistName({ artists }) {
           >
             <h3>{artist.name}</h3>
           </a>
-
-          {/* StretchGoals */}
-          {index < artists.length - 2
-            ? ", "
-            : index === artists.length - 2
-            ? " & "
-            : ""}
         </span>
       ))}
     </div>

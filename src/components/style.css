@@ -12,6 +12,10 @@
   gap: 25px;
   z-index: 1;
 }
+.album-info {
+  display: flex;
+  flex-direction: column;
+}
 
 .album {
   position: relative;
@@ -20,6 +24,19 @@
 
 .album-name {
   font-weight: bold;
+}
+.artist-names {
+  display: flex;
+  align-items: center;
+}
+
+.artist-names span {
+  display: inline;
+  margin: 0 5px;
+}
+
+.artist-names a {
+  text-decoration: none;
 }
 
 /* Artist and Album Names */
@@ -48,17 +65,15 @@ img {
 
 /* Hover Effects */
 /* Hover effects: */
-.cover-wrapper:hover>.icons-wrapper {
+.cover-wrapper:hover > .icons-wrapper {
   opacity: 1;
   transition: 0.4s;
 }
 
-.cover-wrapper:hover>img {
+.cover-wrapper:hover > img {
   opacity: 0.4;
   transition: 0.4s;
 }
-
-
 
 /* Icons Wrapper Styles */
 .cover-wrapper {
