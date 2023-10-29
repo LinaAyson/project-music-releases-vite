@@ -31,7 +31,13 @@ code {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1155px) {
+  .album-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1156px) {
   .album-content {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
