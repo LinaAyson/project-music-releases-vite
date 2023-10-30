@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
+    <img src="/src/assets/music-library.png" alt="Project Banner Image">
   </a>
 </h1>
 
@@ -21,7 +21,6 @@ npm i && code . && npm run dev
 ```
 
 ### The Problem
-
 
 ### View it live
 
