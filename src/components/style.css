@@ -1,11 +1,19 @@
 /* General Styles */
-.header-content {
-  text-align: center;
-  margin-bottom: 3em;
-  font-size: 20px;
-  font-family: Helvetica, sans-serif;
-  color: #1ed760;
+.header-content h1 {
+  display: flex;
+  font-family: Helvetica,sans-serif;
+  font-size: 22px;
+  justify-content: center;
+  margin-bottom: 2em;
 }
+
+ .header-content p {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 2em;
+} 
 
 .album-content {
   display: grid;
@@ -23,17 +31,16 @@
   margin: 10px;
 }
 
-.album-name {
+.album-name h2 {
   font-weight: bold;
+  font-size: 15px;
 }
-.artist-names {
+.artist-names h3 {
   display: flex;
-  align-items: center;
-}
+  /* align-items: center; */
+  font-size: 15px;
 
-.artist-names span {
   display: inline;
-  margin: 0 5px;
 }
 
 .artist-names a {
@@ -41,6 +48,10 @@
 }
 
 /* Artist and Album Names */
+.artist-name {
+  display: inline;
+}
+
 .artist-name a,
 .album-name a {
   color: #a0a0a0;
